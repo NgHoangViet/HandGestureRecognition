@@ -20,7 +20,7 @@ while cap.isOpened():
     blurred = cv2.GaussianBlur(grey, value, 0)
 
     # thresholdin: Otsu's Binarization method
-    _, thresh1 = cv2.threshold(blurred, 250, 255,
+    _, thresh1 = cv2.threshold(blurred, 127, 255,
                                cv2.THRESH_BINARY_INV+cv2.THRESH_OTSU)
 
     # show thresholded image
