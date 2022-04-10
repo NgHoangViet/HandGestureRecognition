@@ -1,0 +1,12 @@
+item { 
+	name:'Play/Pause'
+	id:1
+}
+item { 
+	name:'Volume Up'
+	id:2
+}
+item { 
+	name:'Volume Down'
+	id:3
+}
