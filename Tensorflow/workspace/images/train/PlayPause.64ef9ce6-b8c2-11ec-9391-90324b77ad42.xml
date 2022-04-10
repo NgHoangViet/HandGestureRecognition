@@ -1,0 +1,26 @@
+<annotation>
+  <folder>collectedimages</folder>
+  <filename>PlayPause.64ef9ce6-b8c2-11ec-9391-90324b77ad42</filename>
+  <path>E:\RealTimeObjectDetection\Tensorflow\workspace\images\collectedimages\PlayPause.64ef9ce6-b8c2-11ec-9391-90324b77ad42.jpg</path>
+  <source>
+    <database>Unknown</database>
+  </source>
+  <size>
+    <width>640</width>
+    <height>480</height>
+    <depth>3</depth>
+  </size>
+  <segmented>0</segmented>
+  <object>
+    <name>Play/Pause</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>68</xmin>
+      <ymin>175</ymin>
+      <xmax>251</xmax>
+      <ymax>393</ymax>
+    </bndbox>
+  </object>
+</annotation>

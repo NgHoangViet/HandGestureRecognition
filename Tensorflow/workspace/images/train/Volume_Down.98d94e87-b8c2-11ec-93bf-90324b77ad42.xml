@@ -1,0 +1,26 @@
+<annotation>
+  <folder>collectedimages</folder>
+  <filename>Volume_Down.98d94e87-b8c2-11ec-93bf-90324b77ad42</filename>
+  <path>E:\RealTimeObjectDetection\Tensorflow\workspace\images\collectedimages\Volume_Down.98d94e87-b8c2-11ec-93bf-90324b77ad42.jpg</path>
+  <source>
+    <database>Unknown</database>
+  </source>
+  <size>
+    <width>640</width>
+    <height>480</height>
+    <depth>3</depth>
+  </size>
+  <segmented>0</segmented>
+  <object>
+    <name>Volume Down</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>57</xmin>
+      <ymin>186</ymin>
+      <xmax>182</xmax>
+      <ymax>349</ymax>
+    </bndbox>
+  </object>
+</annotation>
