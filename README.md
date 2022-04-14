@@ -1,7 +1,9 @@
 # HandGestureRecognition
 ## Dùng cử chỉ tay để tạo điều khiển video: stop, tăng, giảm âm lượng
 ## *Python: Dùng thư viện opencv
-![](C:\Users\PC\Pictures\1.png)
+
+<img src="C:\Users\PC\Pictures\1.png"/>
+
 ##Đếm số lượng ngón tay
 ###Dùng bộ lọc Gaussian
     #applying gaussian blur
@@ -12,9 +14,13 @@
                                cv2.THRESH_BINARY_INV + cv2.THRESH_OTSU)
 ###Show thresholded image
     cv2.imshow('Thresholded', thresh1)
-![](C:\Users\PC\Pictures\278219141_5201918339831283_3299538251744030163_n.jpg)
+
+<img src="C:\Users\PC\Pictures\278219141_5201918339831283_3299538251744030163_n.jpg"/>
+
 ##Dùng thư viện Mediapipe để xác định và vẽ 21 mốc điểm của bàn tay để xác định vị trí các ngón
-![img_2.png](img_2.png)
+
+<img alt="img_2.png" src="img_2.png"/>
+
 ## *Học máy: Nhận dạng cử chỉ tay với Tensorflow Object Detection (Mô hình SSD)
 ###1. Thu thập hình ảnh từ webcam và opencv
 ###2. Dùng LabelImg cho Label sign language 
