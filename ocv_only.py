@@ -1,6 +1,9 @@
+import time
+
 import cv2
 import numpy as np
 import math
+import pyautogui as p
 
 cap = cv2.VideoCapture(0)
 while cap.isOpened():
@@ -100,19 +103,33 @@ while cap.isOpened():
         # cv2.circle(crop_img,far,5,[0,0,255],-1)
 
     font = cv2.FONT_HERSHEY_SIMPLEX
+    p.PAUSE = 2
     # define actions required
     if count_defects == 1:
         cv2.putText(img, "1 finger", (0, 50), font, 2, (0, 0, 255), 3, cv2.LINE_AA)
+        p.press('k')
+        print("1")
+
     elif count_defects == 2:
         cv2.putText(img, "2 fingers", (0, 50), font, 2, (0, 0, 255), 3, cv2.LINE_AA)
+        p.press('up')
+        print("2")
     elif count_defects == 3:
         cv2.putText(img, "3 fingers", (0, 50), font, 2, (0, 0, 255), 3, cv2.LINE_AA)
+        p.press('down')
+        print("3")
     elif count_defects == 4 and sub_counter == 0:
         cv2.putText(img, "4 fingers", (0, 50), font, 2, (0, 0, 255), 3, cv2.LINE_AA)
+        p.press('left')
+        print("4")
     elif count_defects == 4 and sub_counter == 1:
         cv2.putText(img, "5 fingers", (0, 50), font, 2, (0, 0, 255), 3, cv2.LINE_AA)
+        p.press('righ')
+        print("5")
     else:
         cv2.putText(img, "an entire hand", (0, 50), font, 2, (0, 0, 255), 3, cv2.LINE_AA)
+        # p.press('')
+        # print("0")
 
     # show appropriate images in windows
     cv2.imshow('Gesture', img)
