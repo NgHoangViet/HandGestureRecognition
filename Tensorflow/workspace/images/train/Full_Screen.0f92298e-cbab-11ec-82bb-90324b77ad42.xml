@@ -1,0 +1,26 @@
+<annotation>
+  <folder>collectedimages</folder>
+  <filename>Full_Screen.0f92298e-cbab-11ec-82bb-90324b77ad42.jpg</filename>
+  <path>E:\RealTimeObjectDetection\Tensorflow\workspace\images\collectedimages\Full_Screen.0f92298e-cbab-11ec-82bb-90324b77ad42.jpg</path>
+  <source>
+    <database>Unknown</database>
+  </source>
+  <size>
+    <width>640</width>
+    <height>480</height>
+    <depth>3</depth>
+  </size>
+  <segmented>0</segmented>
+  <object>
+    <name>Full_Screen</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>203</xmin>
+      <ymin>176</ymin>
+      <xmax>540</xmax>
+      <ymax>471</ymax>
+    </bndbox>
+  </object>
+</annotation>
