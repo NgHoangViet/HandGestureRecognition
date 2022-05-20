@@ -99,6 +99,20 @@ def xml_to_csv(path):
 
 def class_text_to_int(row_label):
     return label_map_dict[row_label]
+    # if row_label == 'Play/Pause':
+    #     return 1
+    # elif row_label == 'Volume Up':
+    #     return 2
+    # elif row_label == 'Volume Down':
+    #     return 3
+    # # elif row_label == 'Fast_Forward':
+    # #     return 4
+    # # elif row_label == 'Rewind':
+    # #     return 4
+    # # elif row_label == 'Full_Screen':
+    # #     return 5
+    # else:
+    #     return 0
 
 
 def split(df, group):

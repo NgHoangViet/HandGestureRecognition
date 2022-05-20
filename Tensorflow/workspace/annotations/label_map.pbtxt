@@ -10,3 +10,15 @@ item {
 	name:'Volume Down'
 	id:3
 }
+item { 
+	name:'Fast_Forward'
+	id:4
+}
+item { 
+	name:'Rewind'
+	id:5
+}
+item { 
+	name:'Full_Screen'
+	id:6
+}
