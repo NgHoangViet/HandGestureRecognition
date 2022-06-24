@@ -33,7 +33,7 @@
 ### 3. Cài đặt Tensorflow Object Detection pipeline configuration
 ### Model: ssd mobnet
 #### Mô hình SSD được chia làm hai giai đoạn:
-        -Trích xuất feature map (dựa vào mạng cơ sở VGG16) để tăng hiệu quả trong việc phát hiện. Ở đây sử dụng MobileNet.
+        -Trích xuất feature map để tăng hiệu quả trong việc phát hiện. Ở đây sử dụng MobileNet.
         -Áp dụng các bộ lọc tích chập để có thể detect được các đối tượng.
 ![image](https://user-images.githubusercontent.com/94554407/175428471-bbde23aa-754c-45a3-8105-0de0a221910e.png)
 
