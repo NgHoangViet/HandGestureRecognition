@@ -95,7 +95,9 @@
 ![convexityDefects](https://user-images.githubusercontent.com/94554407/175957408-910a2887-5d4b-49d9-9921-f76121aa9939.png)
 
 
-### Tìm góc giữa các ngón tay 
+### Tìm góc giữa các ngón tay
+![Screenshot (35)](https://user-images.githubusercontent.com/94554407/175958321-45dd6fc5-6769-432e-a523-20354e237c60.png)
+
     for i in range(defects.shape[0]):
         if angle <= 134:
             count_defects += 1
