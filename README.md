@@ -72,7 +72,7 @@
 
 
 ### Find contour with max area
-#### Để tìm contour chính xác, chúng ta cần phải nhị phân hóa bức ảnh. Trong opencv, việc tìm một contour là việc tìm một đối tượng có màu trắng trên nền đen
+#### Để tìm contour chính xác, chúng ta cần phải nhị phân hóa bức ảnh. Trong opencv, việc tìm một contour là việc tìm một đối tượng có màu trắng trên nền đen. Contours chính là đường cong bao quanh bàn tay.
 
     cnt = max(contours, key=lambda x: cv2.contourArea(x))
 
@@ -82,14 +82,20 @@
 
 ### Finding convex hull
     hull = cv2.convexHull(cnt)
-    defects = cv2.convexityDefects(cnt, hull)
-    count_defects = 0
-    sub_counter = 0
+    
 ### Drawing contours
     drawing = np.zeros(crop_img.shape, np.uint8)
     cv2.drawContours(drawing, [cnt], 0, (0, 255, 0), 0)
     cv2.drawContours(drawing, [hull], 0, (0, 0, 255), 0)
-### Tìm góc giữa các ngón tay để xác định hình dạng của bàn tay tương ứng với 6 cử chỉ tay điều khiển
+    
+### Tìm số ngón tay dựa vào hàm convexityDefects
+    defects = cv2.convexityDefects(cnt, hull)
+    count_defects = 0
+    sub_counter = 0
+![convexityDefects](https://user-images.githubusercontent.com/94554407/175957408-910a2887-5d4b-49d9-9921-f76121aa9939.png)
+
+
+### Tìm góc giữa các ngón tay 
     for i in range(defects.shape[0]):
         if angle <= 134:
             count_defects += 1
